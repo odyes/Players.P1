@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build",
+			"command": "g++",
+			"args": [
+				"-std=c++17",
+				"-Iinclude",
+				"src/*.cc",
+				"-o",
+				"bin/stack.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: \"C:\\Program Files (x86)\\mingw-w64\\mingw32\\bin\\g++.exe\""
+		}
+	]
+}
